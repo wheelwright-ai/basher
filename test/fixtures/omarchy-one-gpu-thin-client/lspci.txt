@@ -1,0 +1,2 @@
+00:00.0 Host bridge: Intel Corporation Gemini Lake Host Bridge (rev 0b)
+00:02.0 VGA compatible controller: Intel Corporation GeminiLake [UHD Graphics 605] (rev 03)

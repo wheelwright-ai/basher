@@ -1,0 +1,72 @@
+#!/bin/sh
+# basher install -- puts mise, node (via mise) and chezmoi on this machine,
+# then links `basher` into ~/.local/bin and ends with `basher doctor`.
+# No sudo unless a prerequisite (curl or wget) is missing; that step is named
+# and the script stops. mise and chezmoi are invoked as binaries, never vendored.
+set -eu
+
+ROOT=$(cd "$(dirname "$(readlink -f "$0")")" && pwd)
+BIN="$HOME/.local/bin"
+ORIG_PATH="$PATH"
+mkdir -p "$BIN"
+PATH="$BIN:$HOME/.local/share/mise/shims:$PATH"
+export PATH
+
+have() { command -v "$1" >/dev/null 2>&1; }
+
+sudo_step() {
+  # $1 = package to install
+  if have pacman; then cmd="sudo pacman -S --needed $1"
+  elif have apt-get; then cmd="sudo apt-get install -y $1"
+  elif have dnf; then cmd="sudo dnf install -y $1"
+  else cmd="install $1 with your package manager (needs root)"
+  fi
+  echo "basher install: needs a sudo step I will not run for you:" >&2
+  echo "  $cmd" >&2
+  echo "then re-run ./install" >&2
+  exit 2
+}
+
+fetch() {
+  if have curl; then curl -fsSL "$1"
+  else wget -qO- "$1"
+  fi
+}
+
+step() { echo "basher install: $*"; }
+
+# fetch runs inside a pipeline, where an exit cannot stop this script, so the
+# downloader is checked once here, before anything is piped.
+need_downloader() { have curl || have wget || sudo_step curl; }
+
+if ! have mise; then
+  need_downloader
+  step "installing mise into $BIN"
+  fetch https://mise.run | sh
+fi
+
+if ! have node; then
+  step "installing node via mise"
+  mise use -g node@lts
+  mise reshim
+fi
+
+if ! have chezmoi; then
+  step "installing chezmoi via mise"
+  if ! mise use -g chezmoi@latest; then
+    step "mise could not provide chezmoi; using the upstream installer"
+    need_downloader
+    fetch https://get.chezmoi.io | sh -s -- -b "$BIN"
+  fi
+  mise reshim 2>/dev/null || true
+fi
+
+ln -sf "$ROOT/bin/basher" "$BIN/basher"
+
+case ":$ORIG_PATH:" in
+  *":$BIN:"*) ;;
+  *) echo "basher install: add $BIN to PATH to run \`basher\` from any shell" ;;
+esac
+
+echo "basher install: done; checking"
+exec "$ROOT/bin/basher" doctor

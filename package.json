@@ -1,0 +1,12 @@
+{
+  "name": "basher",
+  "version": "0.1.0",
+  "description": "Filesystem steward for a fleet of machines: layered desired state, converged unattended.",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "basher": "bin/basher" },
+  "scripts": {
+    "test": "node test/fingerprint.test.js && sh test/install.test.sh && sh test/scan.test.sh"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,10 @@
+{
+  "dmi_board": "02D0WN",
+  "dmi_product": "Wyse 5070 Thin Client",
+  "macs": ["00:00:5e:00:53:10"],
+  "gpus": ["Intel Corporation GeminiLake [UHD Graphics 605]"],
+  "cpu": "Intel(R) Pentium(R) Silver J5005 CPU @ 1.50GHz",
+  "os": "omarchy",
+  "os_version": null,
+  "boot_target": "graphical.target"
+}

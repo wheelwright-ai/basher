@@ -1,0 +1,13 @@
+{
+  "dmi_board": "B450 Pro4",
+  "dmi_product": "To Be Filled By O.E.M.",
+  "macs": ["00:00:5e:00:53:01", "00:00:5e:00:53:02", "00:00:5e:00:53:03"],
+  "gpus": [
+    "Advanced Micro Devices, Inc. [AMD/ATI] Navi 23 [Radeon RX 6600/6600 XT/6600M]",
+    "NVIDIA Corporation GP104 [GeForce GTX 1070]"
+  ],
+  "cpu": "AMD Ryzen 7 3800X 8-Core Processor",
+  "os": "omarchy",
+  "os_version": null,
+  "boot_target": "graphical.target"
+}

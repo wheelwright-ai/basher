@@ -1,0 +1,53 @@
+#!/bin/sh
+# basher -- dispatcher. `doctor` is shell so it can report node itself MISSING;
+# every other verb runs in node.
+set -u
+
+ROOT=$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)
+PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
+export PATH
+
+find_node() {
+  command -v node 2>/dev/null && return 0
+  if command -v mise >/dev/null 2>&1; then
+    mise which node 2>/dev/null && return 0
+  fi
+  return 1
+}
+
+doctor() {
+  missing=0
+  for tool in mise node chezmoi; do
+    version=""
+    case "$tool" in
+      node)
+        bin=$(find_node) && version=$("$bin" --version 2>/dev/null)
+        ;;
+      *)
+        if command -v "$tool" >/dev/null 2>&1; then
+          version=$("$tool" --version 2>/dev/null | head -n 1)
+        fi
+        ;;
+    esac
+    if [ -n "$version" ]; then
+      printf '%-8s %s\n' "$tool" "$version"
+    else
+      printf '%-8s MISSING\n' "$tool"
+      missing=1
+    fi
+  done
+  return "$missing"
+}
+
+case "${1:-}" in
+  doctor)
+    doctor
+    ;;
+  *)
+    NODE=$(find_node) || {
+      echo "basher: node not found; run ./install" >&2
+      exit 127
+    }
+    exec "$NODE" "$ROOT/src/cli.js" "$@"
+    ;;
+esac
