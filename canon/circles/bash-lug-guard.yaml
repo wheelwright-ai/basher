@@ -1,0 +1,42 @@
+kind: circle
+name: bash-lug-guard
+owner: ozi
+level: spoke
+status: live
+schema_version: 1
+trigger: a Bash command is about to run
+inputs:
+  - bash_command
+outputs:
+  - deny_decision
+invariants:
+  - never blocks the kernel verb script itself
+  - heuristic, not a parser -- documented as such, not claimed as complete
+  - >-
+    sibling check: a write-shaped target (redirect, sed -i, tee, cp/mv/rm,
+    node/python write, git mv) resolving into another registered repo's
+    canonical checkout is refused for a top-level session with the persona
+    guard's cross-repo sentence, rows on both repos
+  - >-
+    second sibling check (260919, lug
+    max-persona-boundary-guard-covers-bash-writes-to-source-from-the-top-level-session):
+    after the two checks above find nothing, a write-shaped target under src/,
+    conformance/, reference/, canon/ or scripts/ is refused for a top-level
+    session with max-persona-boundary-guard's own refusalReason() sentence and
+    posture knob (personaBoundary.checkBashAuthorship); a dispatched fork or
+    session is unaffected, and every refusal appends both a ledger row and a
+    calibration reading -- docs/max-persona-boundary-bash-authorship.md
+failure_routing: lug:bash-lug-guard-failure
+counter_metric: bash_lug_write_block_rate
+enforcement: hook
+depends_on: []
+consumers:
+  - external:lug-integrity-checksum
+runs_on: hook_event
+hook_event_name: PreToolUse
+hook_matcher: Bash
+hook_script: src/hooks/bashLugGuardHook.js
+conformance: conformance/fixtures/circle-bash-lug-guard/bash-lug-guard.conformance.test.js
+concern: lug-bypass-prevention-proactive
+instructions_ref: reference/circles/bash-lug-guard.md
+duplicate_of: bash-lug-guard

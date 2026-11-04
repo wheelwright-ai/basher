@@ -1,0 +1,133 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" SessionStart",
+            "timeout": 450
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" PreToolUse",
+            "timeout": 450
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" UserPromptSubmit",
+            "timeout": 300
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|NotebookEdit|Agent",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" PostToolUse",
+            "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" Stop",
+            "timeout": 180
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt|idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" Notification",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" PreCompact",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" SessionEnd",
+            "timeout": 210
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" ] || exit 0; node \"$CLAUDE_PROJECT_DIR/.harness/current/src/hooks/dispatch.js\" StopFailure",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)"
+    ],
+    "allow": [
+      "Bash(node scripts/lug-verb.js *)",
+      "Bash(node scripts/lug-divergence.js *)",
+      "Bash(node scripts/readiness-sweep.js*)",
+      "Bash(git push)",
+      "Bash(git push origin main)",
+      "Bash(node scripts/push-bypass.js *)",
+      "Bash(hf deploy --stage=push,cut)",
+      "Bash(node src/cli.js deploy --stage=push,cut)",
+      "Bash(node scripts/ff-main.js *)",
+      "Bash(node scripts/worktree.js *)",
+      "Bash(node scripts/release-dead-lock.js *)",
+      "Bash(node scripts/grant-scope.js *)"
+    ]
+  }
+}

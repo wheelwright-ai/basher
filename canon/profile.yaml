@@ -1,0 +1,18 @@
+kind: profile
+name: basher-engine
+owner: mariov96
+status: live
+schema_version: 1
+team_shape: solo operator (mariov96) with Claude Code sessions
+compliance: none beyond standard confidentiality
+environment: WSL2, local desktop available
+autonomy_comfort: medium
+autonomy_table_defaults:
+  lug_execution: auto_with_notify
+  dependency_changes: review
+  external_contact: review
+  upgrade_absorption: absorb_and_report
+goals_review_top_n: 3
+permission_mode: auto
+builder_model_lane: sonnet
+planner_model_lane: opus

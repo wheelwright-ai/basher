@@ -1,0 +1,66 @@
+kind: circle
+name: gate-pool-serial-suites
+owner: otto
+level: wheel
+status: live
+schema_version: 1
+interface_version: v1
+trigger: >-
+  the commit or push gate runs its suites through the pool
+  (src/factory/testBoundaryGate.js runSuites -> src/factory/suitePool.js
+  runSuitePool): every suite whose head carries `// serial` runs alone -- before
+  the pool opens at the push gate, after the pooled suites at the commit gate
+  (serial-last, so its budget still judges the covering non-serial suites) --
+  and the gate's first report line names them and the pool size; and when the
+  two timing suites (liveness-lease, launch-idle-watchdog) start, they measure
+  the box (src/factory/boxTiming.js) and derive their windows from it before the
+  first supervised child
+inputs:
+  - suite_head_marker
+  - box_timing_measurement
+  - certification_record_chain
+outputs:
+  - gate_report_serial_first_line
+  - derived_timing_windows
+  - pool_runs_record
+invariants:
+  - >-
+    a suite that touches shared time or shared state declares `// serial` with
+    its measured reason beside it, in the suite, never in a list
+  - >-
+    the gate report names the serial-first (push) or serial-last (commit) suites
+    and the pool size before any verdict prints; a serial suite the commit
+    budget does not reach is NOT REACHED, deferred to the push gate, never
+    passed
+  - >-
+    a timing window is never below its old literal (the floor) and never sized
+    by anything but the box's measured spawn latency, timer lateness, clock step
+    and 1-minute load per cpu; the measurement is printed with the run, and past
+    the load ceiling the load-sensitive checks SKIP with the number, never FAIL
+    and never silently
+  - >-
+    a red serial-first timing suite is re-run once, alone, after the pool closes
+    -- NEW RED only if both runs fail, both outcomes quoted with the load at
+    each; never the corpus, never a pooled suite
+  - >-
+    a lease that ran out at the run's own budget deadline is ended by the
+    supervisor's wall-clock arm at the budget's real end (>= timeoutMs) and
+    named wallclock, never lease-expired and never early
+  - >-
+    the cross-provider fixture waits for the chain's final record
+    (chain_complete: true) and pins credentials, usage root and ceiling root to
+    fixture-owned dirs; no assertion was loosened to pass
+  - never WHEEL_SKIP_TEST_GATE; a pool that flakes is isolated or serialised
+failure_routing: lug:three-suites-flake-only-inside-the-gate-pool-and-block-every-push
+counter_metric: gate_refusals_on_suites_green_alone
+enforcement: kernel_check
+depends_on: []
+consumers:
+  - external:operator
+  - external:git-boundary-test-gate
+runs_on: on_demand
+conformance: >-
+  conformance/fixtures/gate-pool-serial-suites/gate-pool-serial-suites.conformance.test.js
+concern: gate-verdict-independent-of-pool
+instructions_ref: reference/circles/gate-pool-serial-suites.md
+duplicate_of: gate-pool-serial-suites
