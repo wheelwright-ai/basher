@@ -1,0 +1,2244 @@
+{
+  "ok": true,
+  "posture": "absorb_and_report",
+  "version": "97899dd821c6c1fa615532a9cbbd4fc52291001e",
+  "harness_version": "1.0.0",
+  "membership": {
+    "ok": true,
+    "skipped": false,
+    "lines": [
+      "  wheel membership: hub card ok — /home/mario/projects/wheelwright/wheel-hub/canon/basher-engine.spoke.yaml names /home/mario/projects/wheelwright/basher",
+      "  wheel membership: known-repos ok — wheel-hub -> /home/mario/projects/wheelwright/wheel-hub (written just now)",
+      "  wheel membership: inbox ok — the communication inbox lists wheel-hub as a sibling"
+    ]
+  },
+  "previousIncarnation": {
+    "status": "clean",
+    "reason": null,
+    "steps": [],
+    "needsOperator": []
+  },
+  "previousIncarnationLines": [
+    "previous-incarnation basher: no superseded tree or old hook scripts"
+  ],
+  "digest": "sha256:1450b0732a0b074bdd42acec3ca0c220258d28d03a31bfafb3316b807c30408e",
+  "gitignoreBaseline": {
+    "ok": true,
+    "changed": false,
+    "tracked": []
+  },
+  "gitignoreLines": [
+    "gitignore basher: runtime/* already present (.gitignore:9)",
+    "gitignore basher: !runtime/tracks already present (.gitignore:10)",
+    "gitignore basher: !runtime/track-segments already present (.gitignore:11)",
+    "gitignore basher: !runtime/turn-records already present (.gitignore:12)",
+    "gitignore basher: !runtime/sessions already present (.gitignore:13)",
+    "gitignore basher: !runtime/session-snapshot-findings.jsonl already present (.gitignore:14)",
+    "gitignore basher: !runtime/session-snapshot-findings.jsonl.segments/ already present (.gitignore:15)",
+    "gitignore basher: .local/ already present (.gitignore:6)",
+    "gitignore basher: .env already present (.gitignore:3)",
+    "gitignore basher: .env.* already present (.gitignore:4)",
+    "gitignore basher: !.env.template already present (.gitignore:16)",
+    "gitignore basher: !.env.example already present (.gitignore:17)",
+    "gitignore basher: *.pem already present (.gitignore:18)",
+    "gitignore basher: *.key already present (.gitignore:19)",
+    "gitignore basher: .credentials.json already present (.gitignore:20)",
+    "gitignore basher: credentials.json already present (.gitignore:21)",
+    "gitignore basher: secrets.json already present (.gitignore:22)"
+  ],
+  "unchanged": false,
+  "harness": {
+    "version": "97899dd821c6c1fa615532a9cbbd4fc52291001e",
+    "path": "/home/mario/projects/wheelwright/basher/.harness/97899dd821c6c1fa615532a9cbbd4fc52291001e",
+    "reused": false,
+    "pruned": []
+  },
+  "testRunnerFinding": null,
+  "liveApplied": false,
+  "announcedSessions": [],
+  "arrivalAudit": {
+    "audit": {
+      "ok": true,
+      "notGitRepo": false,
+      "auditedAt": "2026-11-04T05:42:42.046Z",
+      "findings": [
+        {
+          "path": ".gitignore",
+          "statusCode": " M",
+          "bucket": "ORGANIC_RUNTIME_CHURN",
+          "reason": "\".gitignore\" has complete, well-formed (or non-inferable-format) content -- expected change, not agent-introduced",
+          "evidence": {}
+        },
+        {
+          "path": "ledger/ledger.jsonl",
+          "statusCode": " M",
+          "bucket": "ORGANIC_RUNTIME_CHURN",
+          "reason": "\"ledger/ledger.jsonl\" has complete, well-formed (or non-inferable-format) content -- expected change, not agent-introduced",
+          "evidence": {}
+        },
+        {
+          "path": ".claude/settings.json",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\".claude/settings.json\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-dispatch-record.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-dispatch-record.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-dispatch-record.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-dispatch-record.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-target-scope-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-target-scope-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-target-scope-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-target-scope-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-tool-scope-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-tool-scope-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/agent-tool-scope-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/agent-tool-scope-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/anthropic-rate-limit-five-hour-envelope.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/anthropic-rate-limit-five-hour-envelope.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/anthropic-rate-limit-five-hour-envelope.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/anthropic-rate-limit-five-hour-envelope.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/bash-destructive-command-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/bash-destructive-command-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/bash-destructive-command-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/bash-destructive-command-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/bash-lug-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/bash-lug-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/bash-lug-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/bash-lug-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/build-load-warning.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/build-load-warning.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/build-load-warning.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/build-load-warning.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/calibration-record.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/calibration-record.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/calibration-record.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/calibration-record.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/capture-direction.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/capture-direction.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/capture-direction.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/capture-direction.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cartographer-commit-trigger.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cartographer-commit-trigger.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cartographer-commit-trigger.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cartographer-commit-trigger.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cartographer.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cartographer.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cartographer.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cartographer.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/chain-disposition.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/chain-disposition.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/chain-disposition.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/chain-disposition.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/circle-completeness-audit.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/circle-completeness-audit.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/circle-completeness-audit.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/circle-completeness-audit.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/closeout-report.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/closeout-report.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/closeout-report.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/closeout-report.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/closeout-request.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/closeout-request.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/closeout-request.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/closeout-request.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/communication-inbox-delta.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/communication-inbox-delta.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/communication-inbox-delta.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/communication-inbox-delta.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/communication-inbox.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/communication-inbox.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/communication-inbox.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/communication-inbox.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-harness-factory-leverage-routing.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-harness-factory-leverage-routing.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-harness-factory-leverage-routing.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-harness-factory-leverage-routing.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-heartbeat.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-heartbeat.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-heartbeat.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-heartbeat.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-wave-gate.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-wave-gate.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-wave-gate.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-wave-gate.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-window-boundary-claim.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-window-boundary-claim.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/conductor-window-boundary-claim.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/conductor-window-boundary-claim.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-provider-certification-history.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-provider-certification-history.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-provider-certification-history.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-provider-certification-history.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-provider-verification.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-provider-verification.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-provider-verification.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-provider-verification.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-store-finding-coalescing.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-store-finding-coalescing.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/cross-store-finding-coalescing.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/cross-store-finding-coalescing.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/default-forward-veto-ledger.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/default-forward-veto-ledger.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/default-forward-veto-ledger.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/default-forward-veto-ledger.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/definition-complete-gate.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/definition-complete-gate.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/definition-complete-gate.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/definition-complete-gate.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/design-salvage-review.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/design-salvage-review.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/design-salvage-review.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/design-salvage-review.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/dispatch-run-salvage.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/dispatch-run-salvage.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/dispatch-run-salvage.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/dispatch-run-salvage.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/done-gate-two-store-certification.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/done-gate-two-store-certification.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/done-gate-two-store-certification.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/done-gate-two-store-certification.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/falsifiability-gate.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/falsifiability-gate.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/falsifiability-gate.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/falsifiability-gate.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/farming.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/farming.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/farming.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/farming.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/footer-audit.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/footer-audit.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/footer-audit.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/footer-audit.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/footer-correction-injection.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/footer-correction-injection.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/footer-correction-injection.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/footer-correction-injection.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/gate-pool-serial-suites.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/gate-pool-serial-suites.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/gate-pool-serial-suites.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/gate-pool-serial-suites.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/git-boundary-test-gate.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/git-boundary-test-gate.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/git-boundary-test-gate.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/git-boundary-test-gate.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/global-settings-drift-check.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/global-settings-drift-check.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/global-settings-drift-check.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/global-settings-drift-check.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/guard-denial-reconciliation.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/guard-denial-reconciliation.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/guard-denial-reconciliation.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/guard-denial-reconciliation.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/headless-usage-reading.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/headless-usage-reading.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/headless-usage-reading.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/headless-usage-reading.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hf-deploy.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hf-deploy.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hf-deploy.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hf-deploy.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hook-binding-drift.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hook-binding-drift.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hook-binding-drift.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hook-binding-drift.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hook-invocation-runlog.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hook-invocation-runlog.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/hook-invocation-runlog.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/hook-invocation-runlog.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/initiative-focus.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/initiative-focus.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/initiative-focus.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/initiative-focus.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/live-apply-announce.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/live-apply-announce.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/live-apply-announce.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/live-apply-announce.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/liveness-lease.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/liveness-lease.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/liveness-lease.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/liveness-lease.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-edges.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-edges.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-edges.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-edges.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-integrity-checksum.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-integrity-checksum.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-integrity-checksum.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-integrity-checksum.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-kernel-verb.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-kernel-verb.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-kernel-verb.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-kernel-verb.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-lifecycle-tracker.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-lifecycle-tracker.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-lifecycle-tracker.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-lifecycle-tracker.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-ownership-claims.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-ownership-claims.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-ownership-claims.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-ownership-claims.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-type-lifecycles.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-type-lifecycles.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-type-lifecycles.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-type-lifecycles.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-write-schema-gate.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-write-schema-gate.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/lug-write-schema-gate.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/lug-write-schema-gate.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/machine-dispatch-ceiling.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/machine-dispatch-ceiling.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/machine-dispatch-ceiling.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/machine-dispatch-ceiling.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/max-persona-boundary-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/max-persona-boundary-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/max-persona-boundary-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/max-persona-boundary-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/notification-agent-waiting-notify.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/notification-agent-waiting-notify.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/notification-agent-waiting-notify.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/notification-agent-waiting-notify.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/orphan-dispatch-disposition.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/orphan-dispatch-disposition.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/orphan-dispatch-disposition.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/orphan-dispatch-disposition.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/oversized-canon-write-guard.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/oversized-canon-write-guard.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/oversized-canon-write-guard.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/oversized-canon-write-guard.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/pattern-language.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/pattern-language.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/pattern-language.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/pattern-language.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/pickup-time-reverification.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/pickup-time-reverification.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/pickup-time-reverification.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/pickup-time-reverification.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/planner-cross-segment-ranking.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/planner-cross-segment-ranking.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/planner-cross-segment-ranking.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/planner-cross-segment-ranking.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/planner-cycle-allocation.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/planner-cycle-allocation.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/planner-cycle-allocation.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/planner-cycle-allocation.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/precompact-checkpoint.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/precompact-checkpoint.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/precompact-checkpoint.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/precompact-checkpoint.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/prompt-interpreter.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/prompt-interpreter.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/prompt-interpreter.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/prompt-interpreter.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/provider-usage-and-retry.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/provider-usage-and-retry.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/provider-usage-and-retry.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/provider-usage-and-retry.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/raw-session-snapshot-end.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/raw-session-snapshot-end.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/raw-session-snapshot-stop.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/raw-session-snapshot-stop.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/raw-worktree-add-redirect.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/raw-worktree-add-redirect.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/raw-worktree-add-redirect.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/raw-worktree-add-redirect.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/readiness-certification-sweep.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/readiness-certification-sweep.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/readiness-certification-sweep.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/readiness-certification-sweep.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/ready-gate-stub.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/ready-gate-stub.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/ready-gate-stub.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/ready-gate-stub.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/reconcile-ledger.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/reconcile-ledger.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/reconcile-ledger.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/reconcile-ledger.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/release-policy.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/release-policy.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/release-policy.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/release-policy.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/rule-12-live-state-report.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/rule-12-live-state-report.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/rule-12-live-state-report.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/rule-12-live-state-report.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/run-roi-extraction.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/run-roi-extraction.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/run-roi-extraction.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/run-roi-extraction.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/scheduler-failure-operator-channel.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/scheduler-failure-operator-channel.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/scheduler-failure-operator-channel.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/scheduler-failure-operator-channel.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/secrets-template-migration.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/secrets-template-migration.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/secrets-template-migration.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/secrets-template-migration.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-continuity-checkpoint.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-continuity-checkpoint.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-continuity-checkpoint.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-continuity-checkpoint.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-end-handoff.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-end-handoff.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-end-handoff.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-end-handoff.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-end-notify.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-end-notify.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-end-notify.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-end-notify.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-exit-commit.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-exit-commit.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-exit-commit.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-exit-commit.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-files-touched.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-files-touched.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-files-touched.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-files-touched.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-registry.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-registry.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-registry.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-registry.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-start-warmup.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-start-warmup.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-start-warmup.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-start-warmup.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-track-write.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-track-write.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/session-track-write.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/session-track-write.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/spoke-gauge.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/spoke-gauge.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/spoke-gauge.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/spoke-gauge.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/stop-agent-waiting-notify.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/stop-agent-waiting-notify.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/stop-agent-waiting-notify.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/stop-agent-waiting-notify.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/stop-turn-marker.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/stop-turn-marker.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/stop-turn-marker.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/stop-turn-marker.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/success-prediction.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/success-prediction.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/success-prediction.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/success-prediction.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/tastegraph-injection.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/tastegraph-injection.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/tastegraph-injection.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/tastegraph-injection.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/temporary-limit-boost-awareness.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/temporary-limit-boost-awareness.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/temporary-limit-boost-awareness.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/temporary-limit-boost-awareness.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/test-lug-traceability.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/test-lug-traceability.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/test-lug-traceability.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/test-lug-traceability.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/turn-failure-record.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/turn-failure-record.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/turn-failure-record.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/turn-failure-record.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/turn-start-attribution.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/turn-start-attribution.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/turn-start-attribution.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/turn-start-attribution.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/unattended-run-kill-switch.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/unattended-run-kill-switch.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/unattended-run-kill-switch.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/unattended-run-kill-switch.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/update-discovery.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/update-discovery.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/update-discovery.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/update-discovery.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/warmup-goals-review.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/warmup-goals-review.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/warmup-goals-review.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/warmup-goals-review.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wcl-entry-directive.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wcl-entry-directive.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wcl-entry-directive.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wcl-entry-directive.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wcl-verify-then-launch.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wcl-verify-then-launch.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wcl-verify-then-launch.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wcl-verify-then-launch.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wheel-clock-catchup.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wheel-clock-catchup.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wheel-clock-catchup.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wheel-clock-catchup.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wheel-feedback-emit.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wheel-feedback-emit.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/wheel-feedback-emit.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/wheel-feedback-emit.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/worktree-registry.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/worktree-registry.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/worktree-registry.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/worktree-registry.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-session-end.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-session-end.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-session-end.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-session-end.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-tool-reset.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-tool-reset.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-tool-reset.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-tool-reset.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-turn-start.md",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-turn-start.md\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/circles/zellij-tab-identity-turn-start.yaml",
+          "statusCode": "??",
+          "bucket": "LEGITIMATE_CUT_ABSORPTION",
+          "reason": "\"canon/circles/zellij-tab-identity-turn-start.yaml\" is under a cut-owned path with complete, well-formed content -- a real prior cut's own write",
+          "evidence": {
+            "cutOwnedPath": true
+          }
+        },
+        {
+          "path": "canon/profile.yaml",
+          "statusCode": "??",
+          "bucket": "ORGANIC_RUNTIME_CHURN",
+          "reason": "\"canon/profile.yaml\" has complete, well-formed (or non-inferable-format) content -- expected change, not agent-introduced",
+          "evidence": {}
+        },
+        {
+          "path": "canon/spoke.wheel-clock.yaml",
+          "statusCode": "??",
+          "bucket": "ORGANIC_RUNTIME_CHURN",
+          "reason": "\"canon/spoke.wheel-clock.yaml\" has complete, well-formed (or non-inferable-format) content -- expected change, not agent-introduced",
+          "evidence": {}
+        },
+        {
+          "path": "generated/settings/settings.json",
+          "statusCode": "??",
+          "bucket": "ORGANIC_RUNTIME_CHURN",
+          "reason": "\"generated/settings/settings.json\" has complete, well-formed (or non-inferable-format) content -- expected change, not agent-introduced",
+          "evidence": {}
+        }
+      ],
+      "summary": {
+        "LEGITIMATE_CUT_ABSORPTION": 203,
+        "ORGANIC_RUNTIME_CHURN": 5,
+        "CRASHED_AGENT_ARTIFACTS": 0,
+        "UNCLASSIFIABLE": 0
+      },
+      "skippedNestedCheckouts": []
+    },
+    "reconciliation": {
+      "reverted": [],
+      "committed": [
+        ".gitignore",
+        "ledger/ledger.jsonl",
+        ".claude/settings.json",
+        "canon/circles/agent-dispatch-record.md",
+        "canon/circles/agent-dispatch-record.yaml",
+        "canon/circles/agent-target-scope-guard.md",
+        "canon/circles/agent-target-scope-guard.yaml",
+        "canon/circles/agent-tool-scope-guard.md",
+        "canon/circles/agent-tool-scope-guard.yaml",
+        "canon/circles/anthropic-rate-limit-five-hour-envelope.md",
+        "canon/circles/anthropic-rate-limit-five-hour-envelope.yaml",
+        "canon/circles/bash-destructive-command-guard.md",
+        "canon/circles/bash-destructive-command-guard.yaml",
+        "canon/circles/bash-lug-guard.md",
+        "canon/circles/bash-lug-guard.yaml",
+        "canon/circles/build-load-warning.md",
+        "canon/circles/build-load-warning.yaml",
+        "canon/circles/calibration-record.md",
+        "canon/circles/calibration-record.yaml",
+        "canon/circles/capture-direction.md",
+        "canon/circles/capture-direction.yaml",
+        "canon/circles/cartographer-commit-trigger.md",
+        "canon/circles/cartographer-commit-trigger.yaml",
+        "canon/circles/cartographer.md",
+        "canon/circles/cartographer.yaml",
+        "canon/circles/chain-disposition.md",
+        "canon/circles/chain-disposition.yaml",
+        "canon/circles/circle-completeness-audit.md",
+        "canon/circles/circle-completeness-audit.yaml",
+        "canon/circles/closeout-report.md",
+        "canon/circles/closeout-report.yaml",
+        "canon/circles/closeout-request.md",
+        "canon/circles/closeout-request.yaml",
+        "canon/circles/communication-inbox-delta.md",
+        "canon/circles/communication-inbox-delta.yaml",
+        "canon/circles/communication-inbox.md",
+        "canon/circles/communication-inbox.yaml",
+        "canon/circles/conductor-harness-factory-leverage-routing.md",
+        "canon/circles/conductor-harness-factory-leverage-routing.yaml",
+        "canon/circles/conductor-heartbeat.md",
+        "canon/circles/conductor-heartbeat.yaml",
+        "canon/circles/conductor-wave-gate.md",
+        "canon/circles/conductor-wave-gate.yaml",
+        "canon/circles/conductor-window-boundary-claim.md",
+        "canon/circles/conductor-window-boundary-claim.yaml",
+        "canon/circles/cross-provider-certification-history.md",
+        "canon/circles/cross-provider-certification-history.yaml",
+        "canon/circles/cross-provider-verification.md",
+        "canon/circles/cross-provider-verification.yaml",
+        "canon/circles/cross-store-finding-coalescing.md",
+        "canon/circles/cross-store-finding-coalescing.yaml",
+        "canon/circles/default-forward-veto-ledger.md",
+        "canon/circles/default-forward-veto-ledger.yaml",
+        "canon/circles/definition-complete-gate.md",
+        "canon/circles/definition-complete-gate.yaml",
+        "canon/circles/design-salvage-review.md",
+        "canon/circles/design-salvage-review.yaml",
+        "canon/circles/dispatch-run-salvage.md",
+        "canon/circles/dispatch-run-salvage.yaml",
+        "canon/circles/done-gate-two-store-certification.md",
+        "canon/circles/done-gate-two-store-certification.yaml",
+        "canon/circles/falsifiability-gate.md",
+        "canon/circles/falsifiability-gate.yaml",
+        "canon/circles/farming.md",
+        "canon/circles/farming.yaml",
+        "canon/circles/footer-audit.md",
+        "canon/circles/footer-audit.yaml",
+        "canon/circles/footer-correction-injection.md",
+        "canon/circles/footer-correction-injection.yaml",
+        "canon/circles/gate-pool-serial-suites.md",
+        "canon/circles/gate-pool-serial-suites.yaml",
+        "canon/circles/git-boundary-test-gate.md",
+        "canon/circles/git-boundary-test-gate.yaml",
+        "canon/circles/global-settings-drift-check.md",
+        "canon/circles/global-settings-drift-check.yaml",
+        "canon/circles/guard-denial-reconciliation.md",
+        "canon/circles/guard-denial-reconciliation.yaml",
+        "canon/circles/headless-usage-reading.md",
+        "canon/circles/headless-usage-reading.yaml",
+        "canon/circles/hf-deploy.md",
+        "canon/circles/hf-deploy.yaml",
+        "canon/circles/hook-binding-drift.md",
+        "canon/circles/hook-binding-drift.yaml",
+        "canon/circles/hook-invocation-runlog.md",
+        "canon/circles/hook-invocation-runlog.yaml",
+        "canon/circles/initiative-focus.md",
+        "canon/circles/initiative-focus.yaml",
+        "canon/circles/live-apply-announce.md",
+        "canon/circles/live-apply-announce.yaml",
+        "canon/circles/liveness-lease.md",
+        "canon/circles/liveness-lease.yaml",
+        "canon/circles/lug-edges.md",
+        "canon/circles/lug-edges.yaml",
+        "canon/circles/lug-integrity-checksum.md",
+        "canon/circles/lug-integrity-checksum.yaml",
+        "canon/circles/lug-kernel-verb.md",
+        "canon/circles/lug-kernel-verb.yaml",
+        "canon/circles/lug-lifecycle-tracker.md",
+        "canon/circles/lug-lifecycle-tracker.yaml",
+        "canon/circles/lug-ownership-claims.md",
+        "canon/circles/lug-ownership-claims.yaml",
+        "canon/circles/lug-type-lifecycles.md",
+        "canon/circles/lug-type-lifecycles.yaml",
+        "canon/circles/lug-write-schema-gate.md",
+        "canon/circles/lug-write-schema-gate.yaml",
+        "canon/circles/machine-dispatch-ceiling.md",
+        "canon/circles/machine-dispatch-ceiling.yaml",
+        "canon/circles/max-persona-boundary-guard.md",
+        "canon/circles/max-persona-boundary-guard.yaml",
+        "canon/circles/notification-agent-waiting-notify.md",
+        "canon/circles/notification-agent-waiting-notify.yaml",
+        "canon/circles/orphan-dispatch-disposition.md",
+        "canon/circles/orphan-dispatch-disposition.yaml",
+        "canon/circles/oversized-canon-write-guard.md",
+        "canon/circles/oversized-canon-write-guard.yaml",
+        "canon/circles/pattern-language.md",
+        "canon/circles/pattern-language.yaml",
+        "canon/circles/pickup-time-reverification.md",
+        "canon/circles/pickup-time-reverification.yaml",
+        "canon/circles/planner-cross-segment-ranking.md",
+        "canon/circles/planner-cross-segment-ranking.yaml",
+        "canon/circles/planner-cycle-allocation.md",
+        "canon/circles/planner-cycle-allocation.yaml",
+        "canon/circles/precompact-checkpoint.md",
+        "canon/circles/precompact-checkpoint.yaml",
+        "canon/circles/prompt-interpreter.md",
+        "canon/circles/prompt-interpreter.yaml",
+        "canon/circles/provider-usage-and-retry.md",
+        "canon/circles/provider-usage-and-retry.yaml",
+        "canon/circles/raw-session-snapshot-end.yaml",
+        "canon/circles/raw-session-snapshot-stop.yaml",
+        "canon/circles/raw-worktree-add-redirect.md",
+        "canon/circles/raw-worktree-add-redirect.yaml",
+        "canon/circles/readiness-certification-sweep.md",
+        "canon/circles/readiness-certification-sweep.yaml",
+        "canon/circles/ready-gate-stub.md",
+        "canon/circles/ready-gate-stub.yaml",
+        "canon/circles/reconcile-ledger.md",
+        "canon/circles/reconcile-ledger.yaml",
+        "canon/circles/release-policy.md",
+        "canon/circles/release-policy.yaml",
+        "canon/circles/rule-12-live-state-report.md",
+        "canon/circles/rule-12-live-state-report.yaml",
+        "canon/circles/run-roi-extraction.md",
+        "canon/circles/run-roi-extraction.yaml",
+        "canon/circles/scheduler-failure-operator-channel.md",
+        "canon/circles/scheduler-failure-operator-channel.yaml",
+        "canon/circles/secrets-template-migration.md",
+        "canon/circles/secrets-template-migration.yaml",
+        "canon/circles/session-continuity-checkpoint.md",
+        "canon/circles/session-continuity-checkpoint.yaml",
+        "canon/circles/session-end-handoff.md",
+        "canon/circles/session-end-handoff.yaml",
+        "canon/circles/session-end-notify.md",
+        "canon/circles/session-end-notify.yaml",
+        "canon/circles/session-exit-commit.md",
+        "canon/circles/session-exit-commit.yaml",
+        "canon/circles/session-files-touched.md",
+        "canon/circles/session-files-touched.yaml",
+        "canon/circles/session-registry.md",
+        "canon/circles/session-registry.yaml",
+        "canon/circles/session-start-warmup.md",
+        "canon/circles/session-start-warmup.yaml",
+        "canon/circles/session-track-write.md",
+        "canon/circles/session-track-write.yaml",
+        "canon/circles/spoke-gauge.md",
+        "canon/circles/spoke-gauge.yaml",
+        "canon/circles/stop-agent-waiting-notify.md",
+        "canon/circles/stop-agent-waiting-notify.yaml",
+        "canon/circles/stop-turn-marker.md",
+        "canon/circles/stop-turn-marker.yaml",
+        "canon/circles/success-prediction.md",
+        "canon/circles/success-prediction.yaml",
+        "canon/circles/tastegraph-injection.md",
+        "canon/circles/tastegraph-injection.yaml",
+        "canon/circles/temporary-limit-boost-awareness.md",
+        "canon/circles/temporary-limit-boost-awareness.yaml",
+        "canon/circles/test-lug-traceability.md",
+        "canon/circles/test-lug-traceability.yaml",
+        "canon/circles/turn-failure-record.md",
+        "canon/circles/turn-failure-record.yaml",
+        "canon/circles/turn-start-attribution.md",
+        "canon/circles/turn-start-attribution.yaml",
+        "canon/circles/unattended-run-kill-switch.md",
+        "canon/circles/unattended-run-kill-switch.yaml",
+        "canon/circles/update-discovery.md",
+        "canon/circles/update-discovery.yaml",
+        "canon/circles/warmup-goals-review.md",
+        "canon/circles/warmup-goals-review.yaml",
+        "canon/circles/wcl-entry-directive.md",
+        "canon/circles/wcl-entry-directive.yaml",
+        "canon/circles/wcl-verify-then-launch.md",
+        "canon/circles/wcl-verify-then-launch.yaml",
+        "canon/circles/wheel-clock-catchup.md",
+        "canon/circles/wheel-clock-catchup.yaml",
+        "canon/circles/wheel-feedback-emit.md",
+        "canon/circles/wheel-feedback-emit.yaml",
+        "canon/circles/worktree-registry.md",
+        "canon/circles/worktree-registry.yaml",
+        "canon/circles/zellij-tab-identity-session-end.md",
+        "canon/circles/zellij-tab-identity-session-end.yaml",
+        "canon/circles/zellij-tab-identity-tool-reset.md",
+        "canon/circles/zellij-tab-identity-tool-reset.yaml",
+        "canon/circles/zellij-tab-identity-turn-start.md",
+        "canon/circles/zellij-tab-identity-turn-start.yaml",
+        "canon/profile.yaml",
+        "canon/spoke.wheel-clock.yaml",
+        "generated/settings/settings.json"
+      ],
+      "commit": "16ed3aa554f0efb393289132434eed1645d284ae",
+      "blocked": [],
+      "credentialBlocked": [],
+      "tierHeld": [],
+      "retiredGeneration": null,
+      "ledgerRowsWritten": [
+        "ldg-arrival-audit-committed-1793770962208-6nxogv-refused-1793770962208-mxrh6f"
+      ]
+    },
+    "profileSeeding": {
+      "seeded": [],
+      "unresolved": [],
+      "written": false
+    },
+    "droppedHooks": [],
+    "spokeLocalHookCircles": [],
+    "spokeLocalHookRefused": []
+  },
+  "wheelClock": {
+    "write": false,
+    "path": "canon/spoke.wheel-clock.yaml",
+    "declared": 1,
+    "sourceRef": "canon/spoke.wheel-clock.yaml",
+    "reason": "spoke declares its own clock in canon/spoke.wheel-clock.yaml -- kept untouched, no default written",
+    "written": false
+  },
+  "cutCarriedJobs": {
+    "clock": "canon/spoke.wheel-clock.yaml",
+    "carried": [
+      "rawSnapshotCatchup",
+      "dueForActivation"
+    ],
+    "present": [
+      "rawSnapshotCatchup",
+      "dueForActivation"
+    ],
+    "added": [],
+    "findings": [],
+    "reason": "canon/spoke.wheel-clock.yaml already declares every cut-carried job (rawSnapshotCatchup, dueForActivation) -- nothing added"
+  },
+  "advisorOverlays": {
+    "written": [],
+    "skipped": [],
+    "findings": [],
+    "reason": "spoke has no maturity (unfounded) -- no advisor stubs written"
+  },
+  "secretsTemplateRetirement": {
+    "retired": false,
+    "kept": false,
+    "templateSource": false,
+    "reason": "no template to retire",
+    "retiredTo": null,
+    "sha256": null
+  },
+  "secretsTemplateLine": null,
+  "verificationKeysSeed": {
+    "outcome": "no_template",
+    "added": [],
+    "owed": [],
+    "reason": "no .env.template -- nothing to seed"
+  },
+  "reported": [],
+  "lug_owed": false,
+  "droppedHooks": [],
+  "spokeLocalHookCircles": [],
+  "spokeLocalHookRefused": [],
+  "warnings": [],
+  "appliedAt": "2026-11-04T05:42:43.791Z",
+  "previous_version": null,
+  "previous_harness_version": null,
+  "harness_version_line": "harness v1.0.0 applied",
+  "cut_owned_files": [
+    "canon/circles",
+    ".claude/settings.json",
+    "CLAUDE.md",
+    "AMBASSADOR_BRIEF.md",
+    "docs/CHANGELOG.md",
+    "canon/origin-codes.registry.yaml"
+  ],
+  "generated_docs": [
+    {
+      "file": "CLAUDE.md",
+      "changed": true,
+      "ok": true
+    },
+    {
+      "file": "AMBASSADOR_BRIEF.md",
+      "changed": true,
+      "ok": true
+    },
+    {
+      "file": "docs/CHANGELOG.md",
+      "changed": true,
+      "ok": true
+    }
+  ]
+}

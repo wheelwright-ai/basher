@@ -1,0 +1,35 @@
+kind: lug
+name: retire-v1-harness-tree
+owner: mariov96
+schema_version: 1
+state: captured
+priority: medium
+estimate: 2h
+executor: claude
+proof_required: true
+intent: >-
+  wcl upgrade (2026-11-04) moved this spoke from the v1 harness to v2: canon/ scaffolded, the v2
+  .claude/settings.json promoted (v1 copy kept at .claude/settings.json), registered in the wheel,
+  current cut applied. The v1 tree is still here, untouched: . It is non-canon to the compiler (rule
+  00) so it breaks nothing, but every v1 hook, skill and state file under it is now dead weight a
+  session can mistake for live behaviour.
+outcome: >-
+  The v1 harness tree is retired: anything still worth keeping (tracks, lugs, teachings) is archived
+  under one clearly-named path, the rest is removed, CLAUDE.md/AGENTS.md no longer prescribe v1
+  wakeup steps, and the spoke compiles clean afterwards.
+acceptance:
+  - >-
+    each v1 marker listed in intent is either removed or moved under one archive path named in the
+    commit
+  - CLAUDE.md and AGENTS.md contain no instruction that reads or writes the v1 tree
+  - '`wcl compile .` is green after the change; the v1 settings backup file is kept'
+constraints:
+  - >-
+    review each v1 directory before removal -- lugs and tracks may carry unfinished intent worth
+    re-filing as v2 lugs
+  - one scoped commit; never git add -A
+out_of_scope:
+  - migrating v1 lug content into v2 lugs wholesale -- re-file only what is still live
+pointers:
+  - .claude/settings.json
+open_questions: []
